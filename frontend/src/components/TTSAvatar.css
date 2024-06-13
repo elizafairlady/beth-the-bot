@@ -1,0 +1,90 @@
+.tts-avatar-container {
+    width: 768px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.avatar-box {
+    position: relative;
+    width: 100%;
+    height: 512px;
+    overflow: hidden;
+    background-color: transparent; /* Default background color if no avatar */
+}
+
+.avatar-image {
+    width: 512px;
+    height: auto;
+}
+
+.placeholder-avatar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #999;
+}
+
+.guest-message {
+    position: relative;
+    top: -192px; /* Relative to the center */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    font-size: 28px;
+    background: rgba(0, 0, 0, 0.66);
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000; /* Black text border */
+    color: #fcf5dc;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: normal;
+    overflow: hidden;
+    max-height: calc(100% - 256px); /* Allows for multiple lines */
+}
+
+.guest-name {
+  color: #ccc5fc;
+}
+
+.animated-word {
+    display: inline-block;
+}
+
+.animated-letter {
+    display: inline-block;
+    animation: bounce 1s;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-2px);
+    }
+    60% {
+        transform: translateY(-3px);
+    }
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.controls button,
+.controls input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.controls input {
+    width: 512px;
+}

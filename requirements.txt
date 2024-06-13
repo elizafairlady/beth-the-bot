@@ -1,0 +1,14 @@
+colorlog==6.8.2
+elevenlabs==1.3.0
+Flask==3.0.3
+Flask_Cors==4.0.1
+Flask_SocketIO==5.3.6
+numpy==1.26.4
+obs_websocket_py==1.0
+Pillow==10.3.0
+PyAudio==0.2.14
+setuptools==69.5.1
+soundfile==0.12.1
+twitchio==2.9.1
+SpeechRecognition
+black
